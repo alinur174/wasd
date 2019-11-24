@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML5 и CSS3 сайт</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+  	<div class="logo">золотая рыба</div>
+  	<img src="img/fish.png" alt="" class="imglogo">
+<div class="menu">
+</div>
+  </header>
+  <section>
+<div id="about">
+	<div class="fish">
+		<img src="img/img2.png" alt="">
+		<h1>О нас</h1>
+		<div class="text">
+			<h2>Творчество начинается в сердце</h2>
+			<p>Прислушиваясь к своим заветным <br>желаниям, причем внимательно, мы <br>получаем возможность не только заниматься<br> творчеством, о котором мечтаем, но и мечтать о том, чтобы<br> это творчество достигло значительных масштабов</p>
+		</div>
+	</div>
+</div>
+<div id="about2">
+	<div class="fish2">
+		<img src="img/img3.png" alt="">
+		<div class="text">
+			<p> Есть те, кто считает, что у творческих людей есть <br>особые тайные силы и врожденные таланты. Но<br> это не так.  В любом есть креативность.   </p>
+		</div>
+	</div>
+ <img src="img/sea.png" alt="" class="sea">
+</div>
+<div id="development">
+  <div class="human">
+    <img src="img/img4.png" alt="" class="classimg4">
+    <h1>Развитие</h1>
+    <p>Человек всегда осознанно или неосознанно стремится созидать. <br>В каждом из нас заложен огромный творческий потенциал и безграничные возможности для его реализации. <br> Создавая что-то новое, меняя окружающий мир, человек непрерывно<br> растёт и меняется сам. Поэтому поиск новых идей и оригинальных решений — это одно из проявлений <br>непрерывного поиска себя, самопознания и личностного роста.</p>
+  </div>
+  <div class="text">
+    <p>Ключ к успеху практически во всех областях жизни. <br> Умение мыслить нестандартно открывает широкие<br> возможности для самореализации.</p>
+    <div class="change">
+      <img src="img/img5.png" alt="" >
+    <p><strong>Четыре способов развить себя </strong></p>
+  <ol>
+    <li>Лучше узнать и понять себя</li>
+    <li>Найти новые решения для стандартных проблем</li>
+    <li>Взглянуть на мир по-новому</li>
+    <li>Повысить собственную эффективность</li>
+  </ol>
+  <h1>Помните, что вы обладаете безграничным знаниям всего мира</h1>
+  </div>
+  </div>
+</div>
+</section>
+<footer id="footer">
+  <hr>
+  <div class="contact">
+    <div class="remember">
+    <img src="img/img6.jpg" alt="">
+    <h1>87072180954</h1>
+    <h2>  Steve Jobs</h2>
+    <p>Мы находимся здесь, чтобы внести свой<br> вклад в этот мир. Иначе зачем мы здесь?</p>
+    </div>
+  </div>
+  <div class="sea2">
+    <img src="img/sea4.png" alt="">
+  </div>
+</footer>
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
